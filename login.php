@@ -8,8 +8,8 @@
             }
 
         if ($_SERVER["REQUEST_METHOD"]=="POST") {
-            if($user!='Refadi' && $pass!='refadi123'){
-                 $err='Invalid username or password';
+            if($user!='Refadi'|| $pass!='refadi123'){
+                 header("location: main.php");
             }
             else{
                $_SESSION['login'] = $user;
