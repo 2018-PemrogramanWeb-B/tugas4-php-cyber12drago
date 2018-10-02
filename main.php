@@ -13,7 +13,7 @@ if(isset($_SESSION['login'])) {
 <head>
     <meta charset="utf-8">
     <title>PHP Login Form</title>
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="style.css" >
 </head>
 
 <body>
@@ -34,9 +34,7 @@ if(isset($_SESSION['login'])) {
     	<div class="clearfix">
       		<button type="submit">Submit</button>
     	</div>
-        <p id="error">
-          <?php echo $err; ?>
-        </p>
+        
         </form>
   	</div>
 	
